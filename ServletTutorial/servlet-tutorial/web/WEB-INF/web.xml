@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <servlet-class>com.servlet.school.HelloWorldServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SchoolClass</servlet-name>
+        <servlet-class>com.servlet.school.SchoolClassServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SchoolClass</servlet-name>
+        <url-pattern>/school/class</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Student</servlet-name>
+        <servlet-class>com.servlet.school.StudentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Student</servlet-name>
+        <url-pattern>/student</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserManagement</servlet-name>
+        <servlet-class>com.servlet.user.UserManagementServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UserManagement</servlet-name>
+        <url-pattern>/userManagement</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserInformation</servlet-name>
+        <servlet-class>com.servlet.user.UserInformationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UserInformation</servlet-name>
+        <url-pattern>/userInfo</url-pattern>
+    </servlet-mapping>
+</web-app>
